@@ -1,9 +1,13 @@
 function sum (array) {
-  // your code here
+  return array.reduce((accumulator, currentValue)=> accumulator + currentValue)
 }
 
 function productAll (array) {
-  // your code here
+  return array.reduce((accRow, row)=> {
+    return accRow * row.reduce((accValue, value)=> { 
+      return value * accValue
+    })
+  })
 }
 
 function objectify (array) {

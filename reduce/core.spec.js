@@ -24,7 +24,7 @@ describe('Reduce', function() {
     });
   });
 
-  describe('#objectify()', function () {
+  xdescribe('#objectify()', function () {
     it('turns an array of arrays into an object', function () {
       var input = [[ 'Thundercats', '80s' ],
                    [ 'The Powerpuff Girls', '90s' ],
@@ -38,7 +38,7 @@ describe('Reduce', function() {
     });
   });
 
-  describe('#luckyNumbers()', function () {
+  xdescribe('#luckyNumbers()', function () {
     it('return a fortune like sentence with lucky numbers', function () {
       var input  = [ 30, 48, 11, 5, 32 ];
       var expected = 'Your lucky numbers are: 30, 48, 11, 5, and 32';

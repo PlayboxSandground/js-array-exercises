@@ -1,4 +1,4 @@
-# Native Array Methods
+****# Native Array Methods
 
 Let's practice using the native array methods `some`, `every`, `map`, `filter`, and `reduce`!
 
@@ -93,7 +93,7 @@ If the function returns `true`, we will *not* show the ad.
 
 ### .every()
 
-Some works by taking a function that returns true or false. If all of the elements in the array return true, *only then* will the entire statement return true.
+Every works by taking a function that returns true or false. If all of the elements in the array return true, *only then* will the entire statement return true.
 
 [Check out the docs.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
@@ -137,8 +137,6 @@ Map works by returning a new array after a function has been applied to every si
 [Check out the docs.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 ###### Example
-
-Imagine we have a group of users with multiple attributes.
 
 ```javascript
 var users = [{ firstName: 'Homer', lastName: 'Simpson' },

@@ -33,7 +33,12 @@ describe('core', function () {
   it('#allSameVowels', function () {
     var goodInput = [ 'amalgam', 'zoom' ];
     assert.equal(core.allSameVowels(goodInput), true);
-
+    assert.equal(core.allSameVowels(['a']), true);
+    assert.equal(core.allSameVowels(['aa']), true);
+    assert.equal(core.allSameVowels(['axa']), true);
+    assert.equal(core.allSameVowels(['xedo']), false);
+    assert.equal(core.allSameVowels(['zoom', 'amalgam']), true);
+    assert.equal(core.allSameVowels(['zoom', 'oligopoly']), false);
     var badInput = [ 'zoom', 'oligopoly' ];
     assert.equal(core.allSameVowels(badInput), false);
   });
